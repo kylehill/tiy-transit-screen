@@ -14,7 +14,8 @@ app.get("/data", function(req, res){
 
   var latitude = req.query.latitude
   var longitude = req.query.longitude
-  var url = "https://iron-rail.herokuapp.com/v1?latitude=" + latitude + "&longitude=" + longitude
+  var radius = 1000
+  var url = "https://iron-rail.herokuapp.com/v1?latitude=" + latitude + "&longitude=" + longitude + "&radius=" + radius
 
   console.log("Proxying request to ", url)
 
