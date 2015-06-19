@@ -81,15 +81,21 @@ var getThatSweetAjaxData = function(callback) {
 
 $(document).on("ready", function(){
 
+  $(".loading-text").text("Calculating location...")
+
   compileTemplates()
 
   getLocationData(function(position){
+
+    $(".loading-text").text("Retrieving data...")
 
     setCoordinates(position)
 
     getThatSweetAjaxData(function(data){
 
       displayData(data)
+
+      $(".loading").addClass("hidden")
 
       interval = setInterval(function(){
 
