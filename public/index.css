@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 0px;
+  font-family: Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #333;
+}
+
+.container {
+  background: #333;
+  height: 100vh;
+  width: 100%;
+}
+
+.station {
+  display: inline-block;
+  width: 33%;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.title {
+  font-size: 24px;
+  color: white;
+  padding-bottom: 6px;
+  border-bottom: solid 2px white;
+  margin-bottom: 5px;
+}
+
+.bike-container {
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  position: relative;
+  background: black;
+}
+
+.bike-background {
+  height: 100%;
+  background: red;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.bikes {
+  position: absolute;
+  left: 5%;
+  font-size: 24px;
+  z-index: 2;
+}
+
+.docks {
+  position: absolute;
+  right: 5%;
+  font-size: 24px;
+  z-index: 2;
+}
+
+.train {
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.line {
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  border-radius: 50px;
+  color: white;
+  width: 50px;
+  display: inline-block;
+}
+
+.line.RD {
+  background: red;
+}
+
+.line.GR {
+  background: green;
+}
+
+.line.BL {
+  background: blue;
+}
+
+.line.YL {
+  background: yellow;
+  color: black;
+}
+
+.line.OR {
+  background: orange;
+  color: black;
+}
+
+.line.SV {
+  background: silver;
+  color: black;
+}
+
+.direction {
+  font-size: 24px;
+  line-height: 50px;
+  display: inline-block;
+  color: white;
+  margin-left: 10px;
+}
+
+.min {
+  width: 50px;
+  line-height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 24px;
+  color: white;
+  text-align: right;
+}

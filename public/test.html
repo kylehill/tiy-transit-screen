@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <div class="container">
+  </div>
+
+  <template id="bikeshareTemplate">
+    <div class="station bikeshare">
+      <div class="title">{{ name }}</div>
+      <div class="bike-container">
+        <div class="bike-background" style="width:{{ width }}%;"></div>
+        <div class="bikes">{{ bikes }}</div>
+        <div class="docks">{{ docks }}</div>
+      </div>
+    </div>
+  </template>
+
+  <template id="metroTemplate">
+    <div class="station metro">
+      <div class="title">{{ name }}</div>
+      {{#each trains}}
+      <div class="train">
+        <div class="line {{ line }}">{{ line }}</div>
+        <div class="direction">{{ direction }}</div>
+        <div class="min">{{ min }}</div>
+      </div>
+      {{/each}}
+    </div>
+  </template>
+
+  <script src="libs/jquery.js"></script>
+  <script src="libs/underscore.js"></script>
+  <script src="libs/handlebars.js"></script>
+  
+  <script src="index.js"></script>
+</body>
+</html>
